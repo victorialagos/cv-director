@@ -1,0 +1,31 @@
+*{margin: 0; padding: 0;}
+.contenedor{ width: 100%; }
+.menu{ float: left; width: 80%; height: 60%; background-image: url("img/timburtonmenu.png"); margin: 10%;}
+footer{ margin: 3%; }
+.encabezado{ height: 55%; width: 100%; float: left; margin: 0px;}
+.menu1 { font-family: bebas neue regular; text-align: center; background-color: #FFFFFF; height: 25px; width: 120px; text-decoration: none; position: relative; top: 325px; left: 75px; transition-duration: 5s; transition-timing-function: ease-in-out;}
+.menu2 { font-family: bebas neue regular; text-align: center; background-color: #FFFFFF; height: 25px; width: 80px; text-decoration: none; position: relative; top: 300px; left: 365px; transition-duration: 5s; transition-timing-function: ease-in-out;}
+.menu3 { font-family: bebas neue regular; text-align: center; background-color: #FFFFFF; height: 25px; width: 120px; text-decoration: none; position: relative; top: 275px; left: 625px; transition-duration: 5s; transition-timing-function: ease-in-out;}
+.menu4 { font-family: bebas neue regular; text-align: center; background-color: #FFFFFF; height: 25px; width: 80px; text-decoration: none; position: relative; top: 250px; left: 910px; transition-duration: 5s; transition-timing-function: ease-in-out;}
+a{ text-decoration: none; font-family: bebas neue regular; color:#000000; transition-duration: 5s; transition-timing-function: ease-in-out;}
+a:hover{ font-size: 20px; width: 22px; background-color: salmon; border-color: red; width: 200px; height: 300px;}
+#contenido{ height: 90%; width: 100%;   }
+
+.menu1 :hover{ background-color: salmon; border-color: red; width: 200px; height: 300px; }
+.menu2 :hover{ background-color: salmon; border-color: red; width: 200px; height: 300px;}
+.menu3 :hover{ background-color: salmon; border-color: red; width: 200px; height: 300px; }
+.menu4 :hover{ background-color: salmon; border-color: red; width: 200px; height: 300px; }
+
+
+
+
+
+
+
+
+
+
+	.slider-container { width: 100%; position: absolute; top: 0%; left: 0%; }
+	.slider-container .mySlides, .slider-container img.mySlides { width: 100%;}
+	.slider-container .left, .slider-container .right { position: absolute; top: 0%; left: 0; padding: 20px 10px; color: #FFF; border: none; font-size: 30px; }
+	.slider-container .right { right: 0; left: inherit;}

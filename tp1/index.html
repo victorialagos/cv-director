@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Tim Burton</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="responsiveslides.min.js"></script>
+</head>
+<body>
+  <div class="contendor">
+  <header><div class="encabezado">
+
+<div class="slider-container">
+  <img class="mySlides" src="img/slider1.png" alt="imagen pelicula" style="display: none;">
+  <img class="mySlides" src="img/slider2.png" alt="imagen pelicula" style="display: none;">
+  <img class="mySlides" src="img/slider3.png" alt="imagen pelicula" style="display: block;">
+  <img class="mySlides" src="img/slider5.png" alt="imagen pelicula" style="display: block;">
+  
+</div>
+</div></header>
+
+
+
+  <section id="contenido">
+<div class="menu"> 
+<div class="menu1"><a href="biografia.html">BIBLIOGRAFÌA</a></div>
+<div class="menu2"><a href="estilos.html">ESTILOS</a></div>
+<div class="menu3"><a href="filmografia.html">FILMOGRAFÌA</a></div>
+<div class="menu4"><a href="notas.html">NOTAS</a></div>
+</div>
+  </section>
+<footer><img src="img/pie.png" alt="pie"></footer>
+</div>
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+  
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+}</script>
+
+
+</body>
