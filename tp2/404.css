@@ -1,0 +1,49 @@
+*{ margin: 0px; padding: 0px; }
+
+.contenedor { width: 100%; background-image: url(img/batmanfondo1.jpg); height: 670px;  }
+
+.boton{ position: absolute; top: 90%; left: 45%; padding: 20px; height: 2px;
+		 background-color: yellow; border-radius: 3px;  width: 130px;text-align:
+	center; transition-duration: 1s; transition-timing-function:ease-in; font-family: 'Roboto Slab', serif;
+	font-size: 7px;}
+
+p{position: absolute; top: 10%; left: 3%; font-family: 'Roboto Slab', serif; font-size: 20px;
+	 width: 200px; text-align: center;
+	transition-duration: 1s; transition-timing-function:ease-in;
+	transition-property: all; }
+
+a{  text-decoration: none; color: black;}
+
+
+
+
+.luz{ height: 400px; }
+.img{ position: absolute; top:0%; left: 0%; z-index: 2; height: 655px;}
+.globo{ width: 500px; height: 600px; position: absolute; left: 48%; top: 1%; background-image: url("img/luz.png"); 
+		background-repeat: no-repeat; transition-duration: 5s; transition-timing-function: ease-in;}
+
+
+
+
+@keyframes luz {
+	0%{transform: rotate(6deg);}
+	50%{transform: rotate(-15deg);}
+	100%{transform: rotate(6deg);}
+}
+.luz{
+	animation-name: luz;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes move1 {
+	0%{transform: translateY(-300px);opacity: 0;}
+	50%{transform: translateY(-20px);opacity: 1;}
+	100%{transform: translateY(-20px);opacity: 1;}
+}	
+.globo {
+	animation-name: move1;
+	animation-duration: 15s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards; 
+}
